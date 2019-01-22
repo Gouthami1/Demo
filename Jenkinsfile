@@ -1,10 +1,14 @@
 pipeline{
+  agent any
   stages{
-    stage{
-      step("Build")
-      {
-        echo"Building"
-       }
+    stage('Build'){
+    step{
+       echo "Building"
+            }
+      stage('Test')
+            step{
+            echo "Test" 
+            }
       }
      }
-    }
+    

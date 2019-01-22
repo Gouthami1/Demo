@@ -1,0 +1,10 @@
+pipeline{
+  stages{
+    stage{
+      step("Build")
+      {
+        echo"Building"
+       }
+      }
+     }
+    }
